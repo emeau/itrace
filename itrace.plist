@@ -1,0 +1,39 @@
+<dict>
+    <!-- define output type & format -->
+    <output_type>stdout</output_type>
+    <output_format>XML</output_format>
+    <!-- handle hot reloading of configuration file, based on checksum -->
+    <hot_reload>true</hot_reload>
+    <!-- don't trace deeper than max_depth, 0 for no limit -->
+    <max_depth>0</max_depth>
+    <!-- filter by module -->
+	<!-- <module>self</module> -->
+    <!-- print only the whitelisted class/method matched by regexp, empty node or children to disable whitelist -->
+    <whitelist>
+        <filter>
+            <!-- regexp filled there are following the binary AND logic -->
+            <module></module>
+            <class>^\.*$</class>
+            <method>^\.*$</method>
+            <lr></lr>
+            <r0></r0>
+            <r1></r1>
+            <r2></r2>
+            <r3></r3>
+        </filter>
+    </whitelist>
+    <blacklist>
+        <filter>
+           <!-- regexp filled there a²re following the binary AND logic -->
+            <module></module>
+            <class></class>
+            <method>^\.*copy\.*$</method>
+            <lr></lr>
+            <r0></r0>
+            <r1></r1>
+            <r2></r2>
+            <r3></r3>
+        </filter>
+    </blacklist>
+    <!-- blacklist class/method matched by these regexp, empty node or children to disable blacklist -->
+</dict>
